@@ -1,0 +1,18 @@
+{{#each this}}
+  <div class='info_container'>
+    <img
+      class='img-contry'
+      src='{{flags.svg}}'
+      alt='{{name.common}}'
+      width='60px'
+      height='auto'
+    />
+    <h2 class='titleNameCapital'>{{name.common}}</h2></div>
+  <p class='itemInfoForCapital'><span class='text-style'> Capital:</span>
+    {{capital}}</p>
+  <p class='itemInfoForCapital'><span class='text-style'> Population:</span>
+    {{population}}</p>
+  <p class='itemInfoForCapital'><span class='text-style'> Languages:</span>
+    {{#each languages}}{{this}},
+    {{/each}}</p>
+{{/each}}
